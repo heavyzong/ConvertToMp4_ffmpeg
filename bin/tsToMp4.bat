@@ -1,0 +1,3 @@
+set INPUT_FILE=%1
+set OUTPUT_FILE=%INPUT_FILE%.mp4
+ffmpeg.exe -i %INPUT_FILE% %OUTPUT_FILE%
