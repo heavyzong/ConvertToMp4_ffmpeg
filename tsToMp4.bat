@@ -10,5 +10,5 @@ if not exist %OUTPUT_DIR% mkdir %OUTPUT_DIR%
 for %%f in (%INPUT_DIR%/*.*) do (
     set "INPUT_FILE=%INPUT_DIR%/%%f"
     set "OUTPUT_FILE=%OUTPUT_DIR%/%%~nf.mp4"
-    bin\ffmpeg.exe -i "!INPUT_FILE!" "!OUTPUT_FILE!"
+    bin\ffmpeg.exe -i "!INPUT_FILE!" -c copy "!OUTPUT_FILE!"
 )
